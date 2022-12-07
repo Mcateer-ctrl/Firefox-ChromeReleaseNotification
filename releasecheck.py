@@ -43,6 +43,7 @@ def checkdatesFF (dateString,todaysdatef,chrome_check,ff_check):
             ffDateString = datetime.datetime.strptime(date,'%Y-%m-%d').isocalendar()[1]
             first_chars = str(todaysdatef)[0:4]
             first_ff_chars = str(date)[0:4]
+            
             if (dateString == ffDateString and int(first_chars) == int(first_ff_chars) ):
                     version = line[-22:]
                     release_date = line[0:10]
