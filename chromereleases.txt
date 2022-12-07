@@ -1,0 +1,13 @@
+2022-12-13 Chrome 108 (Refresh)
+2023-01-10           Chrome 109
+2023-02-07           Chrome 110
+2023-03-07           Chrome 111
+2023-04-04           Chrome 112
+2023-04-25           Chrome 113
+2023-05-30           Chrome 114
+2023-06-27           Chrome 115
+2023-08-08           Chrome 116
+2023-09-05           Chrome 117
+2023-10-03           Chrome 118
+2023-10-31           Chrome 119
+2023-12-05           Chrome 120
