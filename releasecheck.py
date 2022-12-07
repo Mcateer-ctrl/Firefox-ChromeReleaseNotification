@@ -10,7 +10,7 @@ from email.message import EmailMessage
 
 
 
-def checkdatesFF (dateString,todaysdatef,chrome_check,ff_check):
+def checkdates (dateString,todaysdatef,chrome_check,ff_check):
     
 
     desktop_path = os.path.normpath(os.path.expanduser("~/Desktop"))
@@ -37,6 +37,7 @@ def checkdatesFF (dateString,todaysdatef,chrome_check,ff_check):
     filename = desktop_path+"/Chrome:Firefox release check/firefoxreleases.txt"
 
     with open(filename) as file:
+        
         for line in file:
             match = re.search(r'\d{4}-\d{2}-\d{2}', line)
             date = str(datetime.datetime.strptime(match.group(), '%Y-%m-%d').date())
@@ -111,5 +112,5 @@ dateString = datetime.datetime.strptime(todaysdatef,'%Y-%m-%d').isocalendar()[1]
 chrome_check = 0
 ff_check = 0
 
-checkdatesFF(dateString,todaysdatef,chrome_check,ff_check)
+checkdates(dateString,todaysdatef,chrome_check,ff_check)
 
